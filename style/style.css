@@ -50,6 +50,7 @@ button:hover {
   background-color: #fcd3d3;
   margin: 1rem auto;
   border-radius: 1.2rem;
+  overflow: auto;
 }
 .container h3 {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
