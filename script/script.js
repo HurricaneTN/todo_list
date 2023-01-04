@@ -5,7 +5,7 @@ const container = document.getElementsByClassName("container");
 buttonClicked.addEventListener("click", function () {
   const child = document.createElement("h3");
   if (input.value == "") {
-    alert("Entrer une tache d'abord");
+    alert("Enter a task first");
   } else {
     const content = document.createTextNode(input.value);
     child.appendChild(content);
@@ -22,7 +22,7 @@ buttonClicked.addEventListener("click", function () {
       }
     });
     child.addEventListener("dblclick", function () {
-      if (confirm("Voulez vous vraiment supprimer cette tâche ?")) {
+      if (confirm("You want realy to remove this task ?")) {
         container[0].removeChild(child);
       }
     });
