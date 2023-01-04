@@ -44,24 +44,47 @@ button:hover {
   background-color: #306ad4;
   box-shadow: 1px 1px 2px 2px #ff3636;
 }
+#clr {
+  background-color: #8b1e1e;
+}
+#clr:hover {
+  background-color: #ff3636;
+  box-shadow: 1px 1px 2px 2px #306ad4;
+}
 .container {
   width: 38rem;
   height: 35rem;
   background-color: #fcd3d3;
   margin: 1rem auto;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   overflow: auto;
 }
 .container h3 {
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  padding: 1rem 0.5rem 0.5rem 1rem;
   text-align: left;
   font-size: 24px;
   text-transform: capitalize;
   cursor: pointer;
 }
-.container h3:nth-child(2n) {
+.tasksList:nth-child(2n) {
   background-color: #f7ecec;
 }
 .done {
   text-decoration: line-through #ff3636;
+}
+.tasksList {
+  display: flex;
+  justify-content: space-between;
+}
+.tasksList button {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #8b1e1e;
+  align-self: center;
+  margin-right: 1rem;
+}
+.tasksList button:hover {
+  background-color: #ff3636;
+  box-shadow: 1px 1px 2px 2px #3d3d3d;
 }
